@@ -1,0 +1,908 @@
+    @import "config.css";
+    @import "nav.css";
+
+
+    /* CLASS FLEX BOX */
+
+    .flex { display: flex; }
+    .flex_wrap { flex-wrap: wrap; }
+
+    .justify_between { justify-content: space-between; }
+    .justify_center { justify-content: center; }
+    .justify_end { justify-content: flex-end; }
+
+    .align_items_center { align-items: center; }
+    .align_items_end { align-items: flex-end; }
+    .align_items_start { align-items: flex-start; }
+
+    .flex_direction_row { flex-direction: row; }
+    .flex_direction_column { flex-direction: column; }
+
+    /* CLASS FLEX BOX */
+
+
+
+
+
+    .main_title {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 800;
+        color: #1e293b;    
+    }
+
+    .color_title {
+        color: #3b82f6;
+    }
+
+    /*  */
+
+    .btns_default {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .btns_default a {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 7px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: .3s;
+    }
+
+    .btns_default a:hover {
+        transform: translateY(-2px);
+    }
+
+    .color1 {
+        color: #ffffff;
+        background-color: #60a5fa;
+        border: 1px solid #60a5fa;
+    }
+    .color2 {
+        color: #64748b;
+        background-color: #ffffff;
+        border: 1px solid #eeeeee;
+    }
+
+    /*  */
+
+
+    .pulse_infinite {
+        animation: bounce 3s infinite;
+    }
+    @keyframes bounce {
+
+        0%, 100% {
+            transform: translateY(-2%);
+            /* animation-timing-function: cubic-bezier(.8,0,1,1); */
+        }
+
+        50% {
+            transform: none;
+            /* animation-timing-function: cubic-bezier(0,0,.2,1); */
+        }
+
+    }
+
+    /*  */
+
+
+
+
+
+
+
+
+    #banner {
+        width: 100%;
+        height: auto;
+        /* height: calc(100vh - 90px); */
+        text-align: center;
+        /* padding: 100px 0; */
+        background-color: #eff3f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-top:70px;
+        padding-bottom: 150px;
+    }
+
+    #banner .text {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #banner .text .main_title {
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+    #banner .text h2 {
+        color: #9eacbf;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        margin: 30px 0 40px 0;
+    }
+
+    /*  */
+
+
+    #img_dashboard {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: -100px;    
+    }
+
+    /*  */
+
+
+    #numbers {
+        width: 100%;
+        height: auto;
+        padding: 0 0 30px 0;
+    }
+
+
+    #numbers .numbers_itens {
+        width: 25%;
+    }
+
+    #numbers .icon {
+        width: 100%;
+        max-width: 70px;
+    }
+
+    #numbers .text strong,
+    #numbers .text span {
+        display: block;
+    }
+
+    #numbers .text strong {
+        color: #1e293b;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    #numbers .text span {
+        color: #64748b;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    /*  */
+
+
+    #features {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #features .text {
+        width: 43%;
+    }
+
+    #features .text_itens {
+        margin: 40px 0;
+        gap: 1rem;
+    }
+
+    #features .text_itens h3 {
+        color: #1e293b;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #features .text_itens p {
+        color: #9eacbf;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    #features .img { 
+        width: 55%;
+        position: relative;
+    }
+
+    #features .img .details {
+        width: 180px;
+    }
+
+    #features .img .main_img {
+        width: 93%;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 15px;
+
+        position: relative;
+        top: -130px;
+        margin-left: 7%;
+    }
+
+    #features .img .main_img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /*  */
+
+    #team {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        background-color: #eff3f9;
+    }
+
+    #team .title {
+        margin-bottom: 50px;
+    }
+
+    #team .title p {
+        width: 50%;
+        font-size: 16px;
+        line-height: 30px;
+        color: #64748b;
+    }
+
+    #team .main_title {
+        width: 50%;
+    }
+
+    #team .itens {
+        width: 32%;
+        height: auto;
+        padding: 30px;
+        background: #ffffff;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team .itens span {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        line-height: 50px;
+        margin: 0 auto 20px auto;
+        background-color: #bfdbfe;
+        color: #3b82f6;
+        font-weight: 800;
+        display: inline-block;
+    }
+    #team .itens img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+
+    #team .itens h3 {
+        font-size: 18px;
+        color: #1e293b;
+        font-weight: 700;
+        margin: 30px 0 20px 0;
+    }
+
+    #team .itens p {
+        font-size: 16px;
+        color: #64748b;
+    }
+    /* --- */
+
+    #plans {
+        width: 100%;
+        height: auto;
+        padding: 70px 0 ;
+    }
+
+    #plans .main_title {
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto 40px auto;
+    }
+
+    .plans_itens {
+        width: 32%;
+        height: auto;
+        padding: 30px;
+        border-radius: 5px;
+        border: 1px solid #eeeeee;
+        text-align: center;
+        font-size: 16px;
+        color: #A0ADC0;
+    }
+
+    .plans_itens .main_title {
+        margin: 0 !important;
+    }
+
+    .plans_itens img {
+        max-height: 90px;
+    }
+
+    .plans_itens .price {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        color: #3B82F6;
+        margin: 10px 0;
+    }
+
+    .plans_itens ul {
+        margin: 30px auto;
+        text-align: left;
+        max-width: 200px;
+    }
+
+
+    .plans_itens ul li {
+        margin: 10px 0;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .plans_itens ul li::after {
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: #A0ADC0;
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: calc(50% - 3px);
+    }
+
+    .plans_itens:nth-child(2) {
+        background-color: #3B82F6;
+        color: #FFF;
+    }
+
+
+    .plans_itens:nth-child(2) .price {
+        color: #ffffff;
+    }
+
+
+    .banner_mapa {
+        background: url(../images/mapa.avif)  no-repeat center center;
+        overflow: hidden;
+    }
+
+    .banner_mapa .main_title {
+        text-align: center;
+        margin: 200px auto;
+        height: auto;
+        max-width: 500px;
+    }
+
+    .banner_mapa .main_title h3 {
+        padding-top: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #A2AFC1;
+        line-height: 30px;
+    }
+
+
+    .banner_mapa .type{ 
+        padding-top: 50px;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 450px;
+        border: 1px solid transparent;  
+        border-radius: 5px;
+        gap: 2rem;
+        
+    }
+
+    .banner_mapa  input{
+        font-size: 13px;
+        font-weight: 700;
+        border-radius: 8px;
+        background-color: #F1F5F9;
+        padding: 15px 35px;
+        border: transparent;
+    }
+
+    .banner_button a{
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid black;
+        padding: 15px 20px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #3b82f6;
+        border: transparent;
+    }
+
+    .banner_button{
+        transition: .3s;
+    }
+
+    .banner_button:hover{
+        transform: translateY(-2px);
+    }
+
+
+
+
+
+
+    .footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: left;
+    } 
+
+    .footer_logo {
+        width: 100%;
+        max-width: 130px;
+    }
+
+    .footer .color_title {
+        color:#9DABBE;
+        font-weight: 700;
+    }
+
+    .footer p {
+        max-width: 400px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #9CAABD;
+    }
+
+    .footer .information {
+        max-width: 200px;
+    }
+
+
+    .footer .information h1 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 18px;
+    }
+
+    .footer .information h3 {
+        font-size: 18px;
+        color: #9CAABD;
+    }
+
+
+    .footer_redes {
+        padding-top: 50px;
+    }
+
+    .footer_redes h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: #9CAABD;
+    }
+
+    .footer_redes .color_title{
+        color: #3b82f6;
+    }
+
+    .redes img{
+        padding: 0 5px;
+    }
+
+    .footer_redes {
+        padding-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 1198px) {
+        #team .main_title {
+            width: 45%;
+        }
+
+        #plans .main_title h1{
+            font-size: 30px;
+        }
+
+        #team .main_title h1{
+            font-size: 30px;
+        }
+
+    }
+
+
+
+    @media screen and (max-width: 1138px) {
+
+
+        .footer .footer_logo{
+            width: 100%;
+            max-width: 130px;
+        }
+
+        .footer .footer_p .information {
+            width: 50%;
+            max-width: 100%;
+        }
+
+        .footer_redes{
+            text-align: center;
+        }
+    } 
+
+
+
+    @media screen and (max-width: 1108px) {
+
+        .footer {
+            justify-content: space-between;
+        }
+
+        .footer .footer_logo{
+            width: 100%;
+            max-width: 100px;
+        }
+
+        .footer .footer_p {
+            width: 23%;
+            max-width: 100%;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+
+        .footer .information {
+            width: 25%;
+            max-width: 100%;
+        }
+
+        .footer .information h1{
+            font-size: 16px;
+            padding-top: 5px;
+        }
+    }
+
+    @media screen and (max-width: 925px) {
+    
+
+        #img_dashboard {
+            width: 100%;
+            max-width: 700px;    
+        }
+    }
+
+
+    @media screen and (max-width: 800px){
+
+
+        #team .itens {
+            width: 49%;
+            height: auto;
+        }
+
+        #team .itens:nth-child(3) {
+            margin: 20px auto 0 auto; 
+        }
+
+        #plans .plans_itens{
+            width: 49%;
+            height: auto;
+        }
+    
+        #plans .plans_itens:nth-child(3) {
+            margin: 20px auto 0 auto;
+        }
+
+        #numbers .numbers_itens {
+            width: 50%;
+            gap: .3rem;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+
+        #features .text {
+            max-width: 80%;
+        }
+
+        #team {
+            width: 100%;
+            height: auto;
+            padding: 40px 0;
+            background-color: #eff3f9;
+        }
+    }
+
+
+
+    @media screen and (max-width: 772px) {
+
+    
+        #banner .text {
+            max-width: 440px;
+        }
+
+        #banner .text .main_title {
+            font-size: 30px;
+        }
+
+        #features .text .main_title h1 {
+            font-size: 26px;
+        }
+
+        #features .img{
+            width: 98%;
+        }
+
+        
+
+
+        #team .title .main_title h1 {
+            font-size: 24px;
+        }
+
+        #team .title  p {
+            font-size: 14px;
+        }
+
+        .footer .flex {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer .flex .footer_p {
+            width: 80%;
+            padding: 15px 0 15px 0;
+        }
+
+        .footer .flex .information {
+            width: 80%;
+            padding: 15px 0 15px 0;
+        }
+
+
+        .footer_redes .flex {
+            flex-direction: column;
+        }
+
+        .footer_redes .flex .redes {
+            padding-top: 10px;
+        }
+    }
+
+    @media screen and (max-width: 610px) {
+
+        #features {
+            width: 100%;
+            height: auto;
+            padding: 50px 0;
+        }
+
+        #features .text .main_title h1{
+            font-size: 20px;
+        }
+    
+        #features .text {
+            width: 60%;
+        }
+    
+        #features .text_itens {
+            margin: 40px 0;
+            gap: 1rem;
+        }
+    
+        #features .text_itens h3 {
+            font-size: 18px;
+        }
+    
+        #features .text_itens p {
+            font-size: 15px;
+        }
+
+        #features .img .main_img {
+            width: 99%;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 15px;
+    
+            position: relative;
+            top: -130px;
+            margin-left: 4%;
+        }
+
+        #team .itens img {
+            max-width: 100%;
+            max-height: 100px;
+        }
+
+        .plans_itens img {
+            max-height: 70px;
+        }
+
+        #plans .main_title{
+            font-size: 28px;
+        }
+
+        #plans .price {
+            font-size: 26px;
+        }
+
+        #plans .main_title h1{
+            font-size: 26px;
+        }
+        
+        .banner_mapa .main_title h1 {
+            font-size: 28px;
+        } 
+    }
+
+@media screen and (max-width: 600px) {   
+    
+    
+    #team .itens {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+
+    #team .title .main_title{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #team .title .main_title {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    #team .title .main_title h1 {
+        font-size: 20px;
+    }
+
+    #team .title  p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    
+    #numbers .numbers_itens {
+        width: 50%;
+    }
+
+    #numbers .icon {
+        width: 100%;
+        max-width: 40px;
+    }
+    #numbers .text strong {
+        color: #1e293b;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    #numbers .text span {
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+
+    #plans .plans_itens{
+        width: 90%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+
+    #plans .main_title {
+        max-width: 250px;
+    }
+
+    #plans .main_title h1{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 455px) {
+
+
+    #banner .text {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    #banner .text .main_title  {
+        font-size: 28px;
+    }
+
+    #banner .text .btns_default {
+        flex-direction: column;
+        max-width: 40%;
+        margin: 0 auto;
+    }
+
+    .banner_mapa .type {
+        flex-direction: column;
+    }
+
+    #features .img .main_img {
+        width: 99%;
+        height: 350px;
+        margin-left: 2%;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    
+    #banner .text {
+        max-width: 400px;
+    }
+
+    #banner .text .main_title {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    #banner .text h2 {
+        font-size: 15px;
+    }
+
+    #banner .text .main_title {
+        font-size: 20px;
+    }
+
+    #numbers .numbers_itens {
+        width: 50%;
+    }
+
+    #numbers .icon {
+        width: 100%;
+        max-width: 30px;
+    }
+    #numbers .text strong {
+        color: #1e293b;
+        font-weight: 600;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    #numbers .text span {
+        color: #64748b;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .banner_mapa .main_title {
+        max-width: 300px;
+    }
+
+    .banner_mapa .main_title h1{
+        font-size: 20px;
+    }
+
+    #features .img .main_img {
+        width: 99%;
+        height: 300px;
+        margin-left: 2%;
+    }
+
+}
+
+
